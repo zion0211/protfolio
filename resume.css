@@ -1,0 +1,103 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1714894692194-2712d564b277?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+}
+* {
+    color: rgba(255, 255, 255);
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-weight: 500;
+    margin: 5px;
+}
+
+.it p,
+#contact div {
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+
+.gallery {
+    display: flex;
+    /*flex-wrap: wrap;*/
+
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* 이미지 줄바꿈 방지, 수평 스크롤 허용 */
+}
+
+.item {
+    /*flex: 0 0 calc(33.3333% - 20px);*/
+    margin: 10px;
+
+    flex: 0 0 auto;
+    /* 반응형 사이즈 조정 없애고 너비값 고정 */
+    width: 300px;
+}
+
+.item img {
+    width: 100%;
+    /*height: auto;*/
+    height: 300px;
+    /* 높이값 고정, 정사각형으로 맞추기 위해 item 너비값과 동일함 */
+    object-fit: cover;
+    /* 이미지가 부모 사이즈에 맞게 자동으로 조절 */
+    object-position: center;
+    /* 중앙정렬 */
+    border-radius: 5px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.it {
+    width: 140px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* 반투명한 배경 */
+    backdrop-filter: blur(50px);
+    /* 블러 효과 */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
